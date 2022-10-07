@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include 'student/base.html' %}
+<body>
+    <center><h1>{{title}}</h1></center>
+    
+    <form method="POST"> {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">Register</button> 
+    </form>
+</body>
+</html>
