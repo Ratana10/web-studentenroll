@@ -1,0 +1,32 @@
+
+th, td{
+    border: 1px solid black;
+    padding: 14px;
+}
+caption{
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+}
+table{
+    font-family: sans-serif;
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+
+}
+thead th{
+    width: 100%;
+}
+thead {
+    background-color: rgb(170, 137, 28);
+    color: white;
+}
+
+
+
+.even{
+  background-color: rgb(37, 33, 33);
+}

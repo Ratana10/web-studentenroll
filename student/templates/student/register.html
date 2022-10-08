@@ -1,12 +1,36 @@
+{% load static %}
 <!DOCTYPE html>
+
+<link rel="stylesheet" href="{% static 'student/styles_register.css' %}">
+
+
 <html lang="en">
     {% include 'student/base.html' %}
 <body>
-    <center><h1>{{title}}</h1></center>
+
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    
+    
+    <!---
+    <form method="POST"> {% csrf_token %}
+
+        {{form.as_p}}
+       
+       <button type="submit">Register</button> 
+    </form>
+-->
     
     <form method="POST"> {% csrf_token %}
+        <center><h1>{{title}}</h1></center>
         {{form.as_p}}
-        <button type="submit">Register</button> 
+       
+       <button type="submit">Register</button> 
     </form>
+
+
 </body>
 </html>
